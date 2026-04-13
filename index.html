@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenovation Eco Fest 2026</title>
+<style>
+:root {
+  --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --text: #ffffff;
+  --card: rgba(255,255,255,0.1);
+}
+body.light {
+  --bg: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  --text: #222;
+  --card: rgba(255,255,255,0.6);
+}
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition:0.4s;
+}
+header {
+  text-align:center;
+  padding:40px 20px;
+}
+header h1 {
+  font-size:3rem;
+  background: linear-gradient(90deg,#00ffcc,#66ff66);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.highlight{
+  background: linear-gradient(45deg,#00ffcc,#66ff66);
+  padding:5px 10px;
+  border-radius:10px;
+  color:#000;
+  font-weight:bold;
+}
+.toggle {
+  position:fixed;
+  top:20px;
+  right:20px;
+  padding:10px 15px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+.container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.card {
+  backdrop-filter: blur(10px);
+  background: var(--card);
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+.card h3 {
+  margin-top:0;
+}
+.btn {
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 15px;
+  border-radius:10px;
+  background:linear-gradient(45deg,#00ffcc,#00cc66);
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer {
+  text-align:center;
+  padding:20px;
+  opacity:0.8;
+}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="toggleMode()">🌙</button>
+<header>
+<div style="display:flex; justify-content:space-between; align-items:center; padding:0 20px;">
+  <img src="headermsit.png" alt="MSIT Logo" style="height:60px;">
+  <img src="glogo.png" alt="Greenovation Logo" style="height:60px;">
+</div>
+<h1>Eco-Conscious Fest 2026</h1>
+<p style="margin-bottom:12px; display:flex; justify-content:center; align-items:center; gap:10px; flex-wrap:wrap;">
+  <span class="highlight">13th April 2026 - 30th April 2026</span>
+  <span>| Theme:</span>
+  <span class="highlight">OUR POWER , OUR PLANET</span>
+</p>
+<p style="margin-top:10px; font-size:1.1rem; opacity:0.9;">Register now for various events and be part of the eco revolution 🌿</p>
+<div style="margin-top:15px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+<a href="https://sustainable-pledge-initiativegcmsit.vercel.app/" class="btn">🌿 Take a Pledge</a>
+<a href="https://drive.google.com/drive/folders/1oSsSRBXGqmKWak-Ha68LAPj3OAKLPQ-B" class="btn">📄 Brochure</a>
+</div>
+</header>
+<div class="container">
+
+<div class="card"><h3>Story Writing</h3><p>13–26 April | Online | Solo</p><a class="btn" href="https://forms.gle/K4XvVzdmMaLyQ1yR7" target="_blank">Register</a></div>
+<div class="card"><h3>Painting</h3><p>13–26 April | Online | Solo</p><a class="btn" href="https://forms.gle/pmbqCwenYPn4Pf7k6" target="_blank">Register</a></div>
+<div class="card"><h3>Poster Making</h3><p>13–26 April | Online | Solo</p><a class="btn" href="https://forms.gle/fuZsnXhcfc9KEjvCA" target="_blank">Register</a></div>
+<div class="card"><h3>Eco Meme</h3><p>13–26 April | Online | Solo</p><a class="btn" href="https://forms.gle/zgnPDvWPpmpzBZf59" target="_blank">Register</a></div>
+<div class="card"><h3>Then vs Now Documentary Challenge</h3><p>13–26 April | Online | Team</p><a class="btn" href="https://forms.gle/RduhX2ww1GsZ89bbA" target="_blank">Register</a></div>
+<div class="card"><h3>Quiz</h3><p>19 April | Online | Team</p><a class="btn" href="https://forms.gle/Ycnby5G4HWcajBKFA" target="_blank">Register</a></div>
+<div class="card"><h3>Debate</h3><p>20 April | Offline | Team</p><a class="btn" href="https://forms.gle/6HtvZ2989S8fUutj9" target="_blank">Register</a></div>
+<div class="card"><h3>Eco-Conscious Rally</h3><p>21 April | Offline | Team</p><a class="btn" href="https://forms.gle/FusquCRwefhNsBfC7" target="_blank">Register</a></div>
+<div class="card"><h3>Photography</h3><p>27 April | Offline | Solo</p><a class="btn" href="https://forms.gle/qc9xD6H3YP3Qnzrm7" target="_blank">Register</a></div>
+<div class="card"><h3>Pitching Competition</h3><p>30 April | Offline | Team</p><a class="btn" href="https://forms.gle/AWicNagRLkG7aR3g8" target="_blank">Register</a></div>
+
+</div>
+<footer>
+<p>Eco-Conscious Fest 2026 | Greenovation Club , MSIT </p>
+</footer>
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+  const btn = document.querySelector('.toggle');
+  btn.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
+}
+</script>
+</body>
+</html>
